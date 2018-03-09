@@ -1,0 +1,32 @@
+gjhghjh
+hddkjgfjk
+
+DDL- DRCAT
+DML- UID
+DCL- GR
+DQL- S
+TCL- CRCh
+
+DDL:
+Drop
+Rename
+Create
+Alter
+Truncate
+
+DML:
+Update
+Insert
+Delete
+
+DCL:
+Grant
+Revoke
+
+DQL
+Select
+
+TCL:
+Commit
+Rollback
+Checkpoint

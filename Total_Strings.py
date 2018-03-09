@@ -1,4 +1,7 @@
-s="Hi {name} wow! Is a \tsaddist your age : {age} Fluß$ wow suma wow!!!"
+s="@@@@@@@@Hi {name} wow! Is a \tsaddist your age : {age} Fluß$ wow suma wow!!!@@@@@@@@@"
+praveen="This is the testing string"
+intab="aeiou"
+outtab="15951"
 k="064"
 h="PraveeN Kumar"
 m={'name':"suma",'age':22}
@@ -23,10 +26,18 @@ m={'name':"suma",'age':22}
 #print(k.isprintable())#returns true if string is one of the letters and symbols, digits, punctuation,whitespace
 #print(h.isspace())#returns true if the string is whitespace
 #print(h.islower())#returns true if the string contains lower case letters
-print(h.istitle())#Returns true if the string is title-cased
-print(s.isupper())#returns true if the string is upper-cased
-print("@".join("Praveen","Kumar"))#P@r@a@v@e@e@n returns joins two strings
-
+#print(h.istitle())#Returns true if the string is title-cased
+#print(s.isupper())#returns true if the string is upper-cased
+#print("@".join("Praveen"))#P@r@a@v@e@e@n returns joins two strings
+#print(s.ljust(100,'@'))#This method returns the string left justified in a string of length width. Padding is done using the specified fillchar (default is a space). The original string is returned if width is less than len(s).
+#print(s.rjust(100,'@'))#This method returns the string right justified in a string of length width. Padding is done using the specified fillchar (default is a space). The original string is returned if width is less than len(s).
+#print(s.lower())#Returns the copy of a string in lowercase
+#print(s.lstrip('@'))#removes the given fillchar from the left side of the string
+#print(s.rstrip('@'))#removes the given fillchar from the right side of the string
+suma=praveen.maketrans(intab,outtab)#using translate method we can translate intab into outtab which can be possible by maketrans
+print(praveen.translate(suma)) #Th9s 9s th5 t5st9ng str9ng
+print(praveen.partition(" "))#returns a tuple with 3 parts of string
+print(s.replace("suma","koma"))
 
 
 
